@@ -32,7 +32,7 @@ def load_england_gdf():
 @st.cache_data
 def load_rent_data():
     rent_df = pd.read_csv('rent_prices.csv', low_memory=False)
-    rent_df['Time period'] = pd.to_datetime(rent_df['Time period'], format='%b-%Y')
+    rent_df['Time period'] = pd.to_datetime(rent_df['Time period'], format='%b-%y')
     rent_df['Year'] = rent_df['Time period'].dt.year
 
     price_cols = ['Rental price one bed', 'Rental price two bed',
