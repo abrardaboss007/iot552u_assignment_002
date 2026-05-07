@@ -1,8 +1,6 @@
 # Import relevant modules
 import streamlit as st
-import folium
-import geopandas as gpd
-from streamlit_folium import st_folium 
+
 
 # #-------------------------------------------------------------------------------------
 # # London Choropleth Map divided by borough (For rent prices)
